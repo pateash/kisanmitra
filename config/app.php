@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Kisan Mitra',
 
     /*
     |--------------------------------------------------------------------------
@@ -38,7 +38,10 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+
+    #be sure to make it false
+
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------

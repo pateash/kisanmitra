@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Agrom  A Agriculture Flat bootstrap Responsive  Website Template | Home :: w3layouts</title>
+<title>Kisan Mitra  A Agriculture Flat bootstrap Responsive  Website Template | Home :: w3layouts</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.0.min.js"></script>
@@ -18,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
 </script>
-<meta name="keywords" content="Agrom Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="Kisan Mitra Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <!--Google Fonts-->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
@@ -73,7 +73,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<input type="submit" value="">
 								<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">		
 							</div>
-							<p>Agrom</p>
+							<p>Kisan Mitra</p>
 						</div>				
 					</div>
 	        <!---->
@@ -81,30 +81,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
 			   <div class="header-right">
 				   <div class="logo">
-				   	   <h1><a href="index.html">Agrom</a></h1>
+				   	   <h1><a href="index.html">Kisan&nbsp;Mitra<small><small>.co</small></small></a></h1>
 				   </div>
+
+				   @if(Auth::guest())
 				   <div class="header-login">
 					 <div class="top-nav-right">
-						<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
-							    <div id="loginBox">                
-							        <form id="loginForm">
-							                <fieldset id="body">
-							                	<fieldset>
-							                          <label for="email">Email Address</label>
-							                          <input type="text" name="email" id="email">
-							                    </fieldset>
-							                    <fieldset>
-							                            <label for="password">Password</label>
-							                            <input type="password" name="password" id="password">
-							                     </fieldset>
-							                    <input type="submit" id="login" value="Sign in">
-							                	<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
-							            	</fieldset>
-							            <span><a href="#">Forgot your password?</a></span>
-								 </form>
-					        </div>
+						<div id="loginContainer" class='pull-left'><a href="{{ route('login') }}" ><span>Login</span></a></div>
+                                                <div id="loginContainer" class="pull-left"><a href="{{ route('register') }}" ><span>Signup</span></a></div>
 					  </div>
 				   </div>
+
+				   @else
+				   
+				      <div class="dropdown  pull-right" >
+                                <a href="#"  class="dropdown-toggle btn btn-default" type="button" style="color:#411c0e " data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                <ol class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ol>
+                            </div>
+				   @endif
 		      </div>
 		    <div class="clearfix"> </div>
 	     </div>
@@ -140,7 +148,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!--top nav end here-->
 
-@yield('main-content')
+@yield('content')
 
 
 
@@ -169,11 +177,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			  </div>
 			<div class="clearfix"> </div>
 			<div class="copy-right">
-			<p>© 2015 Agrom. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
+			<p>© 2015 Kisan Mitra. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
 		   </div>
 		</div>
 	</div>
 </div>
+ <script src="{{ asset('js/app.js') }}"></script>
 <!--//footer--> 
 </body>
 </html>
