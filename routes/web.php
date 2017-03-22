@@ -22,3 +22,4 @@ Route::get('/km', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
