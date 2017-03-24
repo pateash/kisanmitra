@@ -127,12 +127,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    <div class="top-navg">
 	    	           <span class="menu"> <img src="images/icon.png" alt=""/></span>
 				<ul class="res">
-				    <li><a href="index.html" class="active hvr-sweep-to-bottom">Home</a></li> 
-					<li><a class="hvr-sweep-to-bottom" href="about.html">About</a></li> 
-					<li><a class="hvr-sweep-to-bottom" href="services.html">Services</a></li> 
-					<li><a class="hvr-sweep-to-bottom" href="typo.html">Typo</a></li>
-					<li><a class="hvr-sweep-to-bottom" href="gallery.html">Gallery</a></li> 
-					<li><a class="hvr-sweep-to-bottom" href="contact.html">Contact</a></li> 
+				    <li><a href="/" class="active hvr-sweep-to-bottom">Home</a></li> 
+					<li><a class="hvr-sweep-to-bottom" href="/about">About Kisanmitra</a></li> 
+					<li><a class="hvr-sweep-to-bottom" href="/how-to-use">How to Use</a></li>
+					<li><a class="hvr-sweep-to-bottom" href="/contact">Contact</a></li> 
+                                        <li><a class="hvr-sweep-to-bottom" href="/team">Team</a></li>
 				 </ul>
 					<!-- script-for-menu -->
 						 <script>
