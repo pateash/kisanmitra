@@ -23,5 +23,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/team',function(){
+    return view("team");
+});
 
-
+Route::get('/about',function(){
+    return view("team");
+});
+    ;
+Route::get('/how-to-use',function(){
+    return view("team");
+});
+Route::get('/contact',function(){
+    return view("contact");
+});
