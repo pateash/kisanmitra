@@ -127,7 +127,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    <div class="top-navg">
 	    	           <span class="menu"> <img src="images/icon.png" alt=""/></span>
 				<ul class="res">
-				    <li><a href="/" class="active hvr-sweep-to-bottom">Home</a></li> 
+				    <li><a href="/" class="active hvr-sweep-to-bottom">Predict</a></li> 
 					<li><a class="hvr-sweep-to-bottom" href="/about">About Kisanmitra</a></li> 
 					<li><a class="hvr-sweep-to-bottom" href="/how-to-use">How to Use</a></li>
 					<li><a class="hvr-sweep-to-bottom" href="/contact">Contact</a></li> 
@@ -156,27 +156,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="footer-main">
 			  <div class="col-md-4 ftr-grd">
 			  	 <h3>Get in Touch</h3>
-			  	 <p>8901 ibero  Road</p>
-			  	 <p>Nam libero tempore</p>
-			  	 <p>Phone: +148 5746 415</p>
+			  	 <p>Maulana Azad National Institute of Technology</p>
+			  	 <p>Bhopal, India</p>
+			  	 <p>Phone: +91 7705047900</p>
 			  </div>
 			  <div class="col-md-4 ftr-grd">
-			  	 <h3>Follow Us</h3>
+			  	 <h3>Get Social</h3>
 			  	 <ul>
-			  	 	<li><a href="#"><span class="fa"> </span></a></li>
-			  	 	<li><a href="#"><span class="tw"> </span></a></li>
-			  	 	<li><a href="#"><span class="g"> </span></a></li>
-			  	 	<li><a href="#"><span class="in"> </span></a></li>
+			  	 	<li><a href="http://facebook.com/ashispatel0720"><span class="fa"> </span></a></li>
+			  	 	<li><a href="http://twitter.com/ashispatel0720"><span class="tw"> </span></a></li>
+			  	 	<li><a href="http://linkedin.com/ashispatel0720"><span class="in"> </span></a></li>
 			  	 </ul>
 			  </div>
 			  <div class="col-md-4 ftr-grd">
-			  	 <h3>Join Our Newsletter</h3>
-			  	 <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus </p>
-			  	<label class="hvr-wobble-bottom"> <input type="submit" value="Send"></label>
+			  	 <h3>Contact Us</h3>
+			  	 <p>If you have any query or question, please Contact us.</p>
+			  	<label class="hvr-wobble-bottom">
+               <input type="submit" onclick="window.location.href='/contact'" 	 value="Contact">
+			  	 </label>
+
 			  </div>
 			<div class="clearfix"> </div>
 			<div class="copy-right">
-			<p>© 2015 Kisan Mitra. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
+			<p>© 2015 Kisan Mitra. Nothing reserved ;)  </a></p>
 		   </div>
 		</div>
 	</div>

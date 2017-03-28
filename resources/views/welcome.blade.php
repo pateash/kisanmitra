@@ -1,95 +1,77 @@
-<!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.master')
 
-        <title>Laravel</title>
+@section('content')
+<!--banner start here-->
+<div class="banner">
+	<div class="container">
+		<div class="banner-main">
+		          <h3>We Predict Future From past Experiences.</h3>
+		          <p>find out future prediction for crops before growing them. </p>
+		          <a href="/predict">Predict Now</a>
+                          <a href="/how-to-use">How To Use</a>
+		     <div class="clearfix"> </div>	
+		</div>
+	</div>
+</div>
+<!--banner end here-->
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+<!--wedo start here-->
+<div class="we-do" style="margin-top:2em">
+    <h1 class="text-center text-capitalize" style="color:#956295;font-family: 'Viga-Regular';font-size: 2.4em;font-weight: 400; width: 100%;margin: 0 auto;padding-bottom: 0.3em;"> What do we do?</h1><br>
+	<div class="container">
+		<div class="wedo-main">
+			<div class="col-md-4 wedo-grid">
+				<span class="glyphicon glyphicon-leaf" aria-hidden="true"> </span>
+				<h3>Agriculture Data</h3>
+				<p>Collect past year's Production data from various sources, then clean and scale it. so that it can be used for Prediction Efficiently.</p>
+                                <br><br>
+                        </div>
+			<div class="col-md-4 wedo-grid">
+				<span class="glyphicon glyphicon-user" aria-hidden="true"> </span>
+				<h3>Analysing and Prediction</h3>
+				<p> using Preprocessed and Scaled data , a Model is created which is used to predict next year's yeild.</p>
+			</div>
+			<div class="col-md-4 wedo-grid">
+				<span class="glyphicon glyphicon-eye-open" aria-hidden="true"> </span>
+				<h3>Visualization </h3>
+				<p> past data and predictions are shown in graphical environment. </p>
+			</div>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+		  <div class="clearfix"> </div>	
+	   </div>
 
-            .full-height {
-                height: 100vh;
-            }
+   </div>
+</div>
+</div>
+<!--we do end here-->
+<!--agrom strip start here-->
+		
+<!--agrom strip end here-->
+<!--latest-news start here-->
+<div class="latest-new">
+        <h1 class="text-center text-capitalize" style="color:#956295;font-family: 'Viga-Regular';font-size: 2.4em;font-weight: 400; width: 100%;margin: 0 auto;padding-bottom: 0.3em;margin-top:-2em"> Proud to be Helpful!</h1><br>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+	<div class="container">
+		<div class="latest-news-main">
+		   <div class="col-md-3 latest-grid">
+		   	  <img src="images/l1.jpg" alt="" class="img-responsive">
+		   	  <p>Temporibus autem quibusdam et aut offic</p>
+		   </div>
+		   <div class="col-md-3 latest-grid">
+		   	  <img src="images/l2.jpg" alt="" class="img-responsive">
+		   	  <p>Temporibus autem quibusdam et aut offic</p>
+		   </div>
+		   <div class="col-md-3 latest-grid">
+		   	  <img src="images/l.jpg" alt="" class="img-responsive">
+		   	  <p>Temporibus autem quibusdam et aut offic</p>
+		   </div>
+		   <div class="col-md-3 latest-grid">
+		   	  <img src="images/l4.jpg" alt="" class="img-responsive">
+		   	  <p>Temporibus autem quibusdam et aut offic</p>
+		   </div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--latest news end here-->
+@endsection
