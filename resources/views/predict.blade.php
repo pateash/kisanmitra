@@ -13,7 +13,7 @@
                 </div>
                 <div class="col-xs-12 col-md-4 form-group">
 
-                    <label for="region">Region</label>
+                    <label fookr="region">Region</label>
 
                     <select class="form-control" name="region" id="region">
                         <option value="">Select Region</option>

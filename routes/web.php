@@ -33,6 +33,10 @@ Route::get('/about',function(){
 Route::get('/how-to-use',function(){
     return view("team");
 });
-Route::get('/contact',function(){
-    return view("contact");
+Route::get('/contact','ContactsController@create');
+
+Route::post("/contact",'ContactsController@store');
+
+Route::get("/discuss",function (){
+    return view("discuss");
 });
