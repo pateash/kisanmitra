@@ -335,17 +335,17 @@
                 <ul class="list-unstyled">
                     @if(sizeof($errors)!=0)
                         @foreach($errors->all() as $error)
-                            <li class="alert alert-danger">{{$error}}</li>
+                            <li class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>&nbsp;&nbsp;{{$error}}</li>
                         @endforeach
                     @elseif(request("success")==1)
-                        <li class="alert alert-success">Your Message Sent Successfully!</li>
+                        <li class="alert alert-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;&nbsp;Your Message Sent Successfully!</li>
                     @endif
                 </ul>
                 <form role="form" action="/contact" method="post">
                     {{csrf_field()}}
                     <div class="form-group">
                         <label for="username" > Name <span class="required">*</span></label>
-                        <input type="text" class="form-control" name="name" id="name"  required="required" placeholder="how may I call you?">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="how may I call you?">
                     </div>
                     <div class="form-group">
                         <label for="usermail"> E-mail address <span class="required">*</span></label>

@@ -30,7 +30,7 @@ class ContactsController extends Controller
                 'name'=>'required|max:100',
                 'email'=>'required|max:200',
                 'subject'=>'max:200',
-                'message'=>'max:500'
+                'message'=>'required|max:500'
             ]);
             \App\Contact::create(request(['name','email','subject','message']));
            return redirect("/contact?success=1");

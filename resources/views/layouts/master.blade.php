@@ -51,9 +51,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 removalDelay: 300,
                 mainClass: 'my-mfp-zoom-in'
             });
-
         });
+
     </script>
+
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- Custom Theme files -->
+
+    <style>    #heading{
+            box-sizing: border-box;
+            color: #956295;
+            text-decoration: none;
+            font-family: 'Viga-Regular';
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 44px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            position: relative;
+            text-align: center;
+
+        }
+
+
+    </style>
 </head>
 <body>
 <!--header start here-->
@@ -65,7 +93,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <p>Phone<span class="ph-numb">5696 593 980</span></p>
                 </div>
                 <div id="small-dialog" class="mfp-hide">
-                    <div class="search-top">
+                    <div>
                         <p>Kisan Mitra</p>
                     </div>
                 </div>
@@ -74,7 +102,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="header-right">
                 <div class="logo">
-                    <h1><a href="index.html">Kisan&nbsp;Mitra<small><small>.co</small></small></a></h1>
+                    <h1><a href="/">Kisan&nbsp;Mitra<small><small>.co</small></small></a></h1>
                 </div>
 
                 @if(Auth::guest())
@@ -92,8 +120,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                         <ol class="dropdown-menu" role="menu">
+                        <li>
+                               <a href="/account">Account</a>
+                        </li>
+
                             <li>
-                                <a href="{{ route('logout') }}"
+                                <a  href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     Logout
@@ -128,23 +160,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <li><a class="hvr-sweep-to-bottom" href="/discuss">Discuss</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/team">Team</a></li>
             </ul>
-            <!-- script-for-menu -->
-            <script>
-                $( "span.menu" ).click(function() {
-                    $( "ul.res" ).slideToggle( 300, function() {
-                        // Animation complete.
-                    });
-                });
-            </script>
-            <!-- /script-for-menu -->
+        </div>
         </div>
     </div>
 </div>
 <!--top nav end here-->
 
 @yield('content')
-
-
 
 <div class="footer">
     <div class="container">
@@ -178,6 +200,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 </div>
+<!-- script-for-menu -->
+<script>
+    $( "span.menu" ).click(function() {
+        $( "ul.res" ).slideToggle( 300, function() {
+            // Animation complete.
+        });
+    });
+</script>
+<!-- /script-for-menu -->
 <script src="{{ asset('js/app.js') }}"></script>
 <!--//footer-->
 </body>

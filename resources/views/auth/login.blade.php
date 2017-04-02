@@ -5,13 +5,12 @@
 <div class ="container" style="margin-top:3em;margin-bottom:3em; color: #956295; ">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h1>Login</h1>
+            <h1 id="heading">Login</h1>
             <div class="panel panel-default">
                 
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 

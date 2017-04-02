@@ -11,17 +11,18 @@
 |
 */
 
+//home
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/predict', function () {
-    return view('predict');
+
+//account
+Route::get("/account",function(){
+  return "we will show you your account";
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-
+//about
 Route::get('/team',function(){
     return view("team");
 });
@@ -33,10 +34,23 @@ Route::get('/about',function(){
 Route::get('/how-to-use',function(){
     return view("team");
 });
-Route::get('/contact','ContactsController@create');
-
-Route::post("/contact",'ContactsController@store');
 
 Route::get("/discuss",function (){
     return view("discuss");
 });
+
+
+//prediction routes
+Route::get('/predict','PredictionsController@create');
+Route::get('/result','PredictionsController@result');
+
+
+// authorization routes
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+//contact routes
+Route::get('/contact','ContactsController@create');
+
+Route::post("/contact",'ContactsController@store');
