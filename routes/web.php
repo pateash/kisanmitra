@@ -11,17 +11,21 @@
 |
 */
 
+
+//test
+
+Route::get("/test",function(){
+    return view('auth.passwords.email');
+});
+
+
+
+
+
 //home
 Route::get('/', function () {
     return view('welcome');
 });
-
-//account
-Route::get("/account",function(){
-  return "we will show you your account";
-});
-
-
 //about
 Route::get('/team',function(){
     return view("team");
@@ -48,7 +52,7 @@ Route::get('/result','PredictionsController@result');
 // authorization routes
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/account', 'HomeController@index');
 
 //contact routes
 Route::get('/contact','ContactsController@create');

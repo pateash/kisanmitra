@@ -7,12 +7,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Kisan Mitra  A Agriculture Flat bootstrap Responsive  Website Template | Home :: w3layouts</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <title>{{(ucwords(request()->path())!='/')?ucwords(request()->path()):'Welcome'}} | Kisanmitra</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="/js/jquery-1.11.0.min.js"></script>
     <!-- Custom Theme files -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,8 +21,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta name="keywords" content="Kisan Mitra Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <!--Google Fonts-->
     <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="/js/move-top.js"></script>
+    <script type="text/javascript" src="/js/easing.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event){
@@ -32,11 +32,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
     </script>
     <!-- //end-smoth-scrolling -->
-    <script src="js/menu_jquery.js"></script>
+    <script src="/js/menu_jquery.js"></script>
 
     <!---pop-up-box---->
-    <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
-    <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <link href="/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="/js/jquery.magnific-popup.js" type="text/javascript"></script>
     <!---//pop-up-box---->
     <script>
         $(document).ready(function() {
@@ -56,7 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
 
     <!-- Custom Theme files -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Custom Theme files -->
 
     <style>    #heading{
@@ -152,7 +152,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="top-navg">
             <span class="menu"> <img src="images/icon.png" alt=""/></span>
             <ul class="res">
-                <li><a href="/home" class="active hvr-sweep-to-bottom">Home</a></li>
+                <li><a href="/" class="active hvr-sweep-to-bottom">Home</a></li>
                 <li><a href="/predict" class="active hvr-sweep-to-bottom">Predict</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/about">About Kisanmitra</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/how-to-use">How to Use</a></li>
@@ -209,7 +209,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     });
 </script>
 <!-- /script-for-menu -->
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('/js/app.js') }}"></script>
 <!--//footer-->
 </body>
 </html>
