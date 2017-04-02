@@ -64,15 +64,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="phone">
                     <p>Phone<span class="ph-numb">5696 593 980</span></p>
                 </div>
-                <div class="search">
-                    <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i> </i></a>
-                </div>
                 <div id="small-dialog" class="mfp-hide">
                     <div class="search-top">
-                        <div class="login">
-                            <input type="submit" value="">
-                            <input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-                        </div>
                         <p>Kisan Mitra</p>
                     </div>
                 </div>
@@ -127,10 +120,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="top-navg">
             <span class="menu"> <img src="images/icon.png" alt=""/></span>
             <ul class="res">
-                <li><a href="/" class="active hvr-sweep-to-bottom">Predict</a></li>
+                <li><a href="/home" class="active hvr-sweep-to-bottom">Home</a></li>
+                <li><a href="/predict" class="active hvr-sweep-to-bottom">Predict</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/about">About Kisanmitra</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/how-to-use">How to Use</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/contact">Contact</a></li>
+                <li><a class="hvr-sweep-to-bottom" href="/discuss">Discuss</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/team">Team</a></li>
             </ul>
             <!-- script-for-menu -->
