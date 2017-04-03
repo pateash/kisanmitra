@@ -9,6 +9,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
     <title>{{(ucwords(request()->path())!='/')?ucwords(request()->path()):'Welcome'}} | Kisanmitra</title>
     <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/js/jquery-1.11.0.min.js"></script>
     <!-- Custom Theme files -->
@@ -54,6 +56,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
 
     </script>
+    <!-- script-for-menu -->
+<script>
+    $( "span.menu" ).click(function() {
+        $( "ul.res" ).slideToggle( 300, function() {
+            // Animation complete.
+        });
+    });
+</script>
+<!-- /script-for-menu -->
+<script src="{{ asset('/js/app.js') }}"></script>
+<!--//footer-->
 
     <!-- Custom Theme files -->
     <link href="/css/style.css" rel="stylesheet" type="text/css" media="all"/>
@@ -200,16 +213,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 </div>
-<!-- script-for-menu -->
-<script>
-    $( "span.menu" ).click(function() {
-        $( "ul.res" ).slideToggle( 300, function() {
-            // Animation complete.
-        });
-    });
-</script>
-<!-- /script-for-menu -->
-<script src="{{ asset('/js/app.js') }}"></script>
-<!--//footer-->
+
 </body>
 </html>

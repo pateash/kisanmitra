@@ -10,7 +10,7 @@ class PredictionsController extends Controller
         return view('predict');
     }
     public function result(){
-       dd($this->result());
+       return view("result");
     }
 
 }
