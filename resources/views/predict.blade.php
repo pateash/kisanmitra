@@ -71,7 +71,17 @@
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2" style="margin-top:-3em;" >
                 <h1 id="heading" style="margin-bottom:0em;">Predict</h1>
-                <form action="/result">
+                @if(count($errors)>0)
+                    @foreach($errors->all() as $error)
+                        <div class="alert alert-danger">
+                            {{$error}}
+                        </div>
+                    @endforeach
+                @endif
+
+
+                <form action="/result" method="post">
+                    {{csrf_field()}}
                     {{--select state   --}}
                     <div class="form-group">
                         <div class="panel panel-default">

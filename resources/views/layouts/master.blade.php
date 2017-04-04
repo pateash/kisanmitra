@@ -18,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);}
     </script>
     <meta name="keywords" content="Kisan Mitra Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <!--Google Fonts-->
@@ -56,16 +56,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
 
     </script>
-    <!-- script-for-menu -->
-<script>
-    $( "span.menu" ).click(function() {
-        $( "ul.res" ).slideToggle( 300, function() {
-            // Animation complete.
-        });
-    });
-</script>
-<!-- /script-for-menu -->
-<script src="{{ asset('/js/app.js') }}"></script>
 <!--//footer-->
 
     <!-- Custom Theme files -->
@@ -213,6 +203,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 </div>
+<!-- script-for-menu -->
+<script>
+    $( "span.menu" ).click(function() {
+        $( "ul.res" ).slideToggle( 300, function() {
+            // Animation complete.
+        });
+    });
+</script>
+<!-- /script-for-menu -->
+<script src="{{ asset('/js/app.js') }}"></script>
 
 </body>
 </html>
