@@ -46,7 +46,13 @@ Route::get("/discuss",function (){
 
 //prediction routes
 Route::get('/predict','PredictionsController@create');
-Route::get('/result','PredictionsController@result');
+Route::get("/result",function (){
+    return redirect('/predict')->withErrors(
+        [
+            'error'=>"Please fill following this to continue..."
+        ]);
+});
+Route::post('/result','PredictionsController@result');
 
 
 // authorization routes

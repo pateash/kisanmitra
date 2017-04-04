@@ -12,7 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/jquery.js"></script>
     <!-- Custom Theme files -->
     <link href="/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Custom Theme files -->
@@ -40,22 +40,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
     <script src="/js/jquery.magnific-popup.js" type="text/javascript"></script>
     <!---//pop-up-box---->
-    <script>
-        $(document).ready(function() {
-            $('.popup-with-zoom-anim').magnificPopup({
-                type: 'inline',
-                fixedContentPos: false,
-                fixedBgPos: true,
-                overflowY: 'auto',
-                closeBtnInside: true,
-                preloader: false,
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-zoom-in'
-            });
-        });
 
-    </script>
+
+
 <!--//footer-->
 
     <!-- Custom Theme files -->
