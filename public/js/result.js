@@ -2,91 +2,137 @@
 $('document').ready(function () {
     makeTables();
 });
-// $(document).ajaxSuccess(function(){
-//     makeLineChart();
-//     makeBarChart();
-// });
 
 function makeTables() {
-    var training_label=[];
-    var training_val=[];
-
-    var predicted_val=[];
-    var predicted_label=[];
     var counter = 1975;
+
+    //getting file name from hidden tag
     var training_file = $("#tdata").text();
     var predicted_file = $("#pdata").text();
-    var training_label=[];
-    var training_val=[];
 
-    var predicted_val=[];
-    var predicted_label=[];
 
+    // GETTING BOTH DATA IF NOT AVAILABLE THEN TRYING AGAIN AND AGAIN
 
     //getting the data from training file
     $.getJSON(training_file, function (data) {
         data = data.yeild;
         $.each(data, function (key, val) {
             $("#previous-data").append("<tr><td>" + counter + "</td>" + "<td>" + val + "</td></tr>");
-            training_label.push(counter);
-            training_val.push(val);
             counter++;
         });
-    });
-
-    //getting data from predicted file
-    $.getJSON(predicted_file, function (data) {
-        data = data.yeild; // so that we can get real data
-        $.each(data, function (key, val) {
-            predicted_label.push(counter);
-            predicted_val.push(val);
-            $("#predicted-data").append("<tr><td>" + counter + "</td>" + "<td>" + val + "</td></tr>");
-            counter++;
-        });
-    });
-    $(function(){
-        $("tbody#previous-data").each(function(elem,index){
-            var arr = $.makeArray($("tr",this).detach());
-            arr.reverse();
-            $(this).append(arr);
+    }).done(function () {
+        //getting data from predicted file if success
+        $.getJSON(predicted_file, function (data) {
+            data = data.yeild; // so that we can get real data
+            $.each(data, function (key, val) {
+                $("#predicted-data").append("<tr><td>" + counter + "</td>" + "<td>" + val + "</td></tr>");
+                counter++;
+            });
+        }).done(function () {
+            makeLineChart();
+            makeBarChart();
+            //reversing the data in table must be done after data prepared to make order consistent
+            $(function(){
+                $("tbody#previous-data").each(function(elem,index){
+                    var arr = $.makeArray($("tr",this).detach());
+                    arr.reverse();
+                    $(this).append(arr);
+                });
+            });
         });
     });
 }
+
 
 function makeLineChart() {
 
     var cnv=$("#line-chart");
 
-    //TODO: may be the problem is because of the fact that ajax loads after we have done these things.
-
-    //TODO: create arrays of lables and data
+    //lable_arr will be same for both but training_values will be different.
     var label_arr=[];
-        $("#previous-data tr td:odd").each(function(key,value){
+        $("#previous-data tr td:even").each(function(key,value){
        label_arr.push($(value).html());
     });
-    var value_arr=[];
-    $("#previous-data tr td:even").each(function(key,value){
-        value_arr.push($(value).html());
+     $("#predicted-data tr td:even").each(function(key,value){
+        label_arr.push($(value).html());
+     });
+
+    var training_value_arr=[];
+    $("#previous-data tr td:odd").each(function(key,value){
+        training_value_arr.push($(value).html());
     });
-    console.log("something happening");
+    var predicted_value_arr=[];
+    $("#predicted-data tr td:odd").each(function(key,value){
+        predicted_value_arr.push($(value).html());
+    });
+
+
+    console.log("showing computed arrays");
     console.log(label_arr);
-    console.log(value_arr);
-
-    //TODO: make data for charting using arrays
-    // var ap-data={
-    //     data-set:[{
-    //
-    //    }],
-    // };
-
-    //TODO: make chart
-    // var chart=new Chart(cnv,{
-    //     label:'Predictions',
-    //     type:'line',
-    //    data:ap-data
-    // });
+    console.log(training_value_arr);
+    console.log(predicted_value_arr);
 
 
+    // preparing data for line chart
+    var ap_data_line = {
+        labels: label_arr,
+        datasets: [
+            {
+                label: "Previous Year Crop Yield",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,192,192,0.4)",
+                borderColor: "rgba(75,192,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 5,
+                pointHitRadius: 10,
+                data: training_value_arr,
+                spanGaps: false,
+            },
+            {
+                label: "Predicted Next Five Year Crop Yield",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,192,192,0.4)",
+                borderColor: "rgba(75,192,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 5,
+                pointHitRadius: 10,
+                data: predicted_value_arr,
+                spanGaps: false,
+            }
+        ]
+    };
+
+     //making line chart
+
+    var line_chart= new Chart(document.getElementById("line-chart"),{
+        type:['line'],
+        data:ap_data_line
+    });
+
+
+ console.log("make line chart finished");
 
 }
 function makeBarChart(){
