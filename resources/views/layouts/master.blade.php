@@ -80,7 +80,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="header-main">
             <div class="head-left">
                 <div class="phone">
-                    <p>Phone<span class="ph-numb">5696 593 980</span></p>
+                    <p>Phone<span class="ph-numb">+91 7705047900</span></p>
                 </div>
                 <div id="small-dialog" class="mfp-hide">
                     <div>
