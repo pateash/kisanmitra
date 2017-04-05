@@ -9,7 +9,7 @@ function makeTables() {
     //getting file name from hidden tag
     var training_file = $("#tdata").text();
     var predicted_file = $("#pdata").text();
-
+    var area=$("#areadata").text();
 
     // GETTING BOTH DATA IF NOT AVAILABLE THEN TRYING AGAIN AND AGAIN
 
@@ -25,12 +25,13 @@ function makeTables() {
         $.getJSON(predicted_file, function (data) {
             data = data.yeild; // so that we can get real data
             $.each(data, function (key, val) {
-                $("#predicted-data").append("<tr><td>" + counter + "</td>" + "<td>" + val + "</td></tr>");
+                $("#predicted-data").append("<tr><td>" + counter + "</td>" + "<td>" + parseInt(val) + "</td></tr>");
+                $("#predicted-data-2").append("<tr><td>" + counter + "</td>" + "<td>" + parseInt(val) + "</td>+<td>" + parseInt(val)*area + "</td></tr>");
+
                 counter++;
             });
         }).done(function () {
-            makeLineChart();
-            makeBarChart();
+            makeCharts();
             //reversing the data in table must be done after data prepared to make order consistent
             $(function(){
                 $("tbody#previous-data").each(function(elem,index){
@@ -44,7 +45,7 @@ function makeTables() {
 }
 
 
-function makeLineChart() {
+function makeCharts() {
 
     var cnv=$("#line-chart");
 
@@ -203,7 +204,7 @@ for (var i = 0; i <16; i++) {
 
     var line_chart= new Chart(document.getElementById("line-chart"),{
         type:['line'],
-        data:ap_data_line
+        data:ap_data_line,
     });
 
    var bar_chart= new Chart(document.getElementById('bar-chart'),{
@@ -212,10 +213,5 @@ for (var i = 0; i <16; i++) {
    });
 
  // console.log("charting finished finished");
-
-}
-function makeBarChart(){
-//TODO: make bar chart with same way as line chart
-
 
 }

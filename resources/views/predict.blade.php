@@ -92,7 +92,7 @@
                             <div class="panel-body">
                                 <select class="form-control" name="state" id="state" required>
                                     <option value="">Select State</option>
-                                    <option value="mp">Madhya Pradesh</option>
+                                    <option value="madhya_pradesh">Madhya Pradesh</option>
                                 </select>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                     <div class="form-group" style="margin-top: 3em;margin-bottom: 3em;">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><label for="area">Agricultural  Area</label></h3>
+                                <h3 class="panel-title"><label for="area">Your Agricultural  Area (Hactares)</label></h3>
                             </div>
                             <div class="panel-body">
                                 <input type="number" name="area" class="form-control" id="area" placeholder="Area in Hectares" required>
