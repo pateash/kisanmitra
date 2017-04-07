@@ -49,7 +49,7 @@ Route::get('/predict','PredictionsController@create');
 Route::get("/result",function (){
     return redirect('/predict')->withErrors(
         [
-            'error'=>"Please fill following this to continue..."
+            'error'=>"Please fill form this to continue..."
         ]);
 });
 Route::post('/result','PredictionsController@result');

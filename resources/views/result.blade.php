@@ -10,9 +10,9 @@
         <h1 id="heading" class="row" style="margin-top:1em;font-size:2em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prediction Result</h1>
         {{--   STARTING CHARTS  --}}
         <h2 id="heading"  style="font-size:1.5em">#1 Charts</h2>
-        <div class="row">
+        <div class="row" id='charts'>
             {{--line chart--}}
-            <div class="col-md-6 ">
+            <div class="col-md-6 " >
                 <canvas  id="line-chart"  width="100%" height="60%"></canvas>
             </div>
             {{--bar chart--}}

@@ -40,7 +40,18 @@ function makeTables() {
                     $(this).append(arr);
                 });
             });
+        }).fail(function(){
+
+             $("#charts").prepend("<div class='alert alert-danger col-md-6 col-md-offset-3' style='text-align:center'><span class=\"glyphicon glyphicon-exclamation-sign\" aria-hidden=\"true\"></span>&nbsp;&nbsp;Error loading Charts</div>");
+            console.log("some error occured inside");
         });
+    }).fail(function(){
+        var errormsg="<div class='alert alert-danger col-md-6 col-md-offset-3' style='text-align:center'>";
+            errormsg+="<span class=\"glyphicon glyphicon-exclamation-sign\" aria-hidden=\"true\"></span>";
+            errormsg+="&nbsp;&nbsp;Error loading Charts<br><br><a onclick='location.reload()'>Reload&nbsp;&nbsp;<span class='glyphicon glyphicon-repeat'></span>"
+            errormsg+="</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/predict'>Try Again&nbsp;&nbsp;<span class='glyphicon glyphicon-refresh'></span></a></div>";
+             $("#charts").prepend(errormsg);
+             console.log("some error occured in 1");
     });
 }
 

@@ -5,8 +5,14 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
+
+
 <html>
 <head>
+{{--TODO: make data for other regions
+     TODO: make other pages
+     TODO: post to host
+--}}
     <title>{{(ucwords(request()->path())!='/')?ucwords(request()->path()):'Welcome'}} | Kisanmitra</title>
     <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 
