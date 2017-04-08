@@ -32,11 +32,11 @@ Route::get('/team',function(){
 });
 
 Route::get('/about',function(){
-    return view("team");
+    return view("about");
 });
     ;
 Route::get('/how-to-use',function(){
-    return view("team");
+    return view("how_to_use");
 });
 
 Route::get("/discuss",function (){
@@ -58,7 +58,7 @@ Route::post('/result','PredictionsController@result');
 // authorization routes
 Auth::routes();
 
-Route::get('/account', 'HomeController@index');
+Route::get('/account'   , 'HomeController@index');
 
 //contact routes
 Route::get('/contact','ContactsController@create');
