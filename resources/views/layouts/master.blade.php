@@ -15,6 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --}}
     <title>{{(ucwords(request()->path())!='/')?ucwords(request()->path()):'Welcome'}} | Kisanmitra</title>
     <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -56,6 +57,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Custom Theme files -->
 
     <style>    #heading{
+            box-sizing: border-box;
+            color: #956295;
+            text-decoration: none;
+            font-family: 'Viga-Regular';
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 44px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            position: relative;
+            text-align: center;
+
+        }
+        .ap-heading{
             box-sizing: border-box;
             color: #956295;
             text-decoration: none;
