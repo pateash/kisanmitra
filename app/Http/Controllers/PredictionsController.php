@@ -16,8 +16,8 @@ class PredictionsController extends Controller
         $crop=request('crop');
         $area=request('area');
 
-        $predicted_data=$state.'/'.$region.'_'.$crop.'_'.'predicted.json';
-        $training_data=$state.'/'.$region.'_'.$crop.'_'.'training.json';
+        $predicted_data=$state.'/'.$region.'/'.$crop.'_'.'predicted.json';
+        $training_data=$state.'/'.$region.'/'.$crop.'_'.'training.json';
         return view("result",compact(['predicted_data','training_data','area','state','region','crop' ]));
     }
 

@@ -27,7 +27,6 @@ function makeTables() {
             $.each(data, function (key, val) {
                 $("#predicted-data").append("<tr><td>" + counter + "</td>" + "<td>" + parseInt(val) + "</td></tr>");
                 $("#predicted-data-2").append("<tr><td>" + counter + "</td>" + "<td>" + parseInt(val) + "</td>+<td>" + parseInt(val)*area + "</td></tr>");
-
                 counter++;
             });
         }).done(function () {
@@ -46,11 +45,11 @@ function makeTables() {
             console.log("some error occured inside");
         });
     }).fail(function(){
-        var errormsg="<div class='alert alert-danger col-md-6 col-md-offset-3' style='text-align:center'>";
+        var errormsg="<div class='alert alert-danger col-md-6 col-md-offset-3' style='text-align:center;'>";
             errormsg+="<span class=\"glyphicon glyphicon-exclamation-sign\" aria-hidden=\"true\"></span>";
-            errormsg+="&nbsp;&nbsp;Error loading Charts<br><br><a onclick='location.reload()'>Reload&nbsp;&nbsp;<span class='glyphicon glyphicon-repeat'></span>"
-            errormsg+="</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/predict'>Try Again&nbsp;&nbsp;<span class='glyphicon glyphicon-refresh'></span></a></div>";
-             $("#charts").prepend(errormsg);
+            errormsg+="&nbsp;&nbsp;Error loading Charts<br><br><a onclick='location.reload()' style='color:#956295'>Reload&nbsp;&nbsp;<span class='glyphicon glyphicon-repeat'></span>"
+            errormsg+="</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/predict' style='color:#956295'>Try Again&nbsp;&nbsp;<span class='glyphicon glyphicon-refresh'></span></a></div>";
+             $("#charts").prepend(errormsg).css("cursor","hand");
              console.log("some error occured in 1");
     });
 }
