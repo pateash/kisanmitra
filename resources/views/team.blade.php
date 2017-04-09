@@ -195,8 +195,8 @@
                                    </div>
 
                             </div></div>
-                            
-                            
+
+
                             {{--anurag --}}
                             <div class="col-md-12  profile">
 
@@ -244,7 +244,7 @@
 
                                     <div class="panel-body">
                                         <div class="img-box col-xs-3 ">
-                                            <img src="/images/si.png" class="img-responsive img-rounded">
+                                            <img src="/images/rana.jpg" class="img-responsive img-rounded">
                                             <ul class="text-center">
                                                 <a href="#">
                                                     <li><i class="fa fa-facebook"></i></li>
