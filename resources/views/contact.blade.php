@@ -332,15 +332,7 @@
 
             <div id="content"  class="col-md-5 alert alert-danger">
                 <h1> Contact Us </h1>
-                <ul class="list-unstyled">
-                    @if(sizeof($errors)!=0)
-                        @foreach($errors->all() as $error)
-                            <li class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>&nbsp;&nbsp;{{$error}}</li>
-                        @endforeach
-                    @elseif(request("success")==1)
-                        <li class="alert alert-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;&nbsp;Your Message Sent Successfully!</li>
-                    @endif
-                </ul>
+                @include('errors')
                 <form role="form" action="/contact" method="post">
                     {{csrf_field()}}
                     <div class="form-group">

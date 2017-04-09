@@ -9,10 +9,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <html>
 <head>
-{{--TODO: make data for other regions
-     TODO: make other pages
-     TODO: post to host
---}}
     <title>{{(ucwords(request()->path())!='/')?ucwords(request()->path()):'Welcome'}} | Kisanmitra</title>
     <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
@@ -38,6 +34,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 event.preventDefault();
                 $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
             });
+
+  //ap_popupdown for changing the size of login and signup button when we hover mouse over them
+ $("#user-in a").hover(function(){
+    $(this).css('font-size','1em');
+     $(this).css("backgroundColor",'#f4d638')
+ });
+ $("#user-in a").mouseleave(function(){
+     $(this).css('font-size','0.8em');
+     $(this).css("backgroundColor",'#956295')
+ });
+
         });
     </script>
     <!-- //end-smoth-scrolling -->
@@ -123,12 +130,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
 
                 @if(Auth::guest())
-                    <div class="header-login">
-                        <div class="top-nav-right">
-                            <div id="loginContainer" class='pull-left'><a href="{{ route('login') }}" ><span>Login</span></a></div>
-                            <div id="loginContainer" class="pull-left"><a href="{{ route('register') }}" ><span>Signup</span></a></div>
+
+                        <div class="top-nav-right pull-right col-sx-12" style="font-size:1.3em;" id="user-in">
+                            <a href="{{ route('login')}}" class="label label-default" style="background-color: #956295;" >Login</a>
+                            <a href="{{ route('register') }}" class="label label-success" style="background-color: #956295;">Signup</a>
                         </div>
-                    </div>
+
 
                 @else
 
@@ -224,6 +231,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             // Animation complete.
         });
     });
+
 </script>
 <!-- /script-for-menu -->
 <script src="{{ asset('/js/app.js') }}"></script>

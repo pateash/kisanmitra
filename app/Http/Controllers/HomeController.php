@@ -25,4 +25,18 @@ class HomeController extends Controller
     {
         return view('account');
     }
+
+    public function change_password(){
+     $this->validate(request(),
+         [
+         'password'=>'required|min:6|confirmed'
+         ]);
+        //if validation is successful, change password
+        auth()->user()->password=bcrypt(request('password'));
+        auth()->user()->save();
+        //redirect again to account, with success message
+        return redirect("/account?success=1");
+
+    }
+
 }

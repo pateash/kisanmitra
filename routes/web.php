@@ -60,6 +60,9 @@ Auth::routes();
 
 Route::get('/account'   , 'HomeController@index');
 
+//change password
+Route::patch('/password','HomeController@change_password');
+
 //contact routes
 Route::get('/contact','ContactsController@create');
 
