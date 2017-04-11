@@ -15,7 +15,7 @@
                 <ul class="nav nav-pills nav-stacked admin-menu" >
                     <li class="active"><a href="" data-target-id="profile"><i class="glyphicon glyphicon-user"></i>&nbsp;Profile</a></li>
                     <li><a href="" data-target-id="change-password"><i class="glyphicon glyphicon-lock"></i>&nbsp;Change Password</a></li>
-                    <li><a href="" data-target-id="settings"><i class="glyphicon glyphicon-cog"></i>&nbsp;Settings</a></li>
+                    <!-- <li><a href="" data-target-id="settings"><i class="glyphicon glyphicon-cog"></i>&nbsp;Settings</a></li> -->
                     <li><a href="" data-target-id="logout"><i class="glyphicon glyphicon-log-out"></i>&nbsp;Logout</a></li>
                 </ul>
             </div>
