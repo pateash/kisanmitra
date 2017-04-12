@@ -219,7 +219,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="clearfix"> </div>
             <div class="copy-right">
-                <p>© 2015 Kisan Mitra. Nothing reserved ;)</p>
+                <p>© 2017-forever Kisan Mitra. Nothing reserved ;)</p>
             </div>
         </div>
     </div>
