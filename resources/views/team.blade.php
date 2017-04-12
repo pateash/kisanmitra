@@ -284,7 +284,7 @@
 
                                     <div class="panel-body">
                                         <div class="img-box col-xs-3 ">
-                                            <img src="/images/si.png" class="img-responsive img-rounded">
+                                            <img src="/images/vivek.jpg" class="img-responsive img-rounded">
                                             <ul class="text-center">
                                                 <a href="#">
                                                     <li><i class="fa fa-facebook"></i></li>
@@ -302,7 +302,7 @@
                                             </ul>
                                         </div>
 
-                                        <div class="col-md-8"><h1>Mahesh Meena&nbsp;&nbsp;<span class="label label-primary" style="font-size:0.6em">Developer</span></h1>
+                                        <div class="col-md-8"><h1>Vivek Meena&nbsp;&nbsp;<span class="label label-primary" style="font-size:0.6em">Developer</span></h1>
                                             <h2>Developer/Computer Science Student at <a href="http://manit.ac.in">MANIT</a></h2>
                                             <ul class="list-inline" style="font-size: 1.5em;">
                                                 <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
