@@ -126,8 +126,8 @@
 
     <script>
         //FOLLOWING ARE COMMENTED FOR SPEEDING THINGS
-        $(document).ready(function()
-        {
+       // $(document).ready(function()
+        //{
             var navItems = $('.admin-menu li > a');
             var navListItems = $('.admin-menu li');
             var allWells = $('.admin-content');
@@ -144,6 +144,6 @@
                 var target = $(this).attr('data-target-id');
                 $('#' + target).show();
             });
-        });
+        //});
     </script>
 @endsection

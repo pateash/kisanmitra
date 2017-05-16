@@ -126,7 +126,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="header-right">
                 <div class="logo">
-                    <h1><a href="/">Kisan&nbsp;Mitra<small><small>.co</small></small></a></h1>
+                    <h1><a href="/">Kisan&nbsp;Mitra<small><small></small></small></a></h1>
                 </div>
 
                 @if(Auth::guest())
