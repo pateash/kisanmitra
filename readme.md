@@ -1,9 +1,5 @@
 <p align="center"><img src="http://www.indiawaterportal.org/sites/indiawaterportal.org/files/KSY.jpg"></p>
 
-<p align="center">
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
 ## About Kisanmitra
 
 Kisan is a machine learning based web application with expressive, elegant visualization of yield predictions.
@@ -12,10 +8,10 @@ an educated farmer can do way better than a experienced uneducated one, because 
 to make proper planning about his/her future.
 using kisanmitra , one can predict the crop yield for next 5 year.
 
-- [Simple, fast Algorithm](https://kisanmitra.co/predict).
-- Expressive, intuitive visualization Using Charts(https://kisanmitra.co/visualize).
-- [Robust background machine learning](https://kisanmitra.co/about).
-- [Hardworking Team](https://kisanmitra.com/team).
+- [Simple, fast Algorithm](https://kisanmitra.ml/predict).
+- Expressive, intuitive visualization Using Charts(https://kisanmitra.ml/visualize).
+- [Robust background machine learning](https://kisanmitra.ml/about).
+- [Hardworking Team](https://kisanmitra.ml/team).
 
 kisanmitra is accessible, yet powerful  tools needed for crop yeild production.
 A superb combination of simplicity, elegance, and innovation give you tools you need to properly regulate your
