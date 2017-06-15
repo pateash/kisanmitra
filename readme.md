@@ -1,5 +1,12 @@
 <p align="center"><img src="http://www.indiawaterportal.org/sites/indiawaterportal.org/files/KSY.jpg"></p>
 
+<p align="center">
+<a href="https://packagist.org/packages/ashishpatel0720/kisanmitra"><img src="https://poser.pugx.org/ashishpatel0720/kisanmitra/downloads" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/ashishpatel0720/kisanmitra"><img src="https://poser.pugx.org/ashishpatel0720/kisanmitra/v/unstable.svg" alt="Latest UnStable Version"></a>
+<a href="https://packagist.org/packages/ashishpatel0720/kisanmitra"><img src="https://poser.pugx.org/ashishpatel0720/kisanmitra/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/ashishpatel0720/kisanmitra"><img src="https://poser.pugx.org/ashishpatel0720/kisanmitra/license.svg" alt="License"></a>
+</p>
+
 ## About Kisanmitra
 
 Kisan is a machine learning based web application with expressive, elegant visualization of yield predictions.
@@ -26,13 +33,16 @@ farming strategies according to environment and market.
 <img width='250' height='100' src="http://scikit-learn.org/stable/_static/scikit-learn-logo-small.png">
 </p>
 
-
-## How to use
-
-
 ## Contributing
 You are welcome to contribute to this project,
 Thank you for considering contributing for the greater good for farmers! 
+
+**steps**
+- fork or clone project
+- run `composer install`
+- edit `env.example` and create `env` file for your settings
+- that's it happy coding..
+
 ## Vulnerabilities
 
 If you discover a vulnerability within kisanmitra, please send an e-mail to Ashish Patel at ashishpatel0720@gmail.com. All  vulnerabilities will be promptly addressed.
