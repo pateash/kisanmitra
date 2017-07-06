@@ -38,7 +38,7 @@
 
             <a href="http://laravel.com"><img width='250' height='200'  class="img-thumbnail" src="https://camo.githubusercontent.com/5ceadc94fd40688144b193fd8ece2b805d79ca9b/68747470733a2f2f6c61726176656c2e636f6d2f6173736574732f696d672f636f6d706f6e656e74732f6c6f676f2d6c61726176656c2e737667">
             </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://scikit-learn.org"><img width='250' height='100' class="img-thumbnail" src="https://www.doc.ic.ac.uk/project/2015/362/g1536201/scikit-learn/doc/themes/scikit-learn/static/img/scikit-learn-logo.png">
+            <a href="http://scikit-learn.org"><img width='250' height='100' class="img-thumbnail" src="http://www.scipy-lectures.org/_images/scikit-learn-logo.png">
             </a>
 
             <h2 id="contributing" class="ap-heading" style="margin:1em">Contributing</h2>
