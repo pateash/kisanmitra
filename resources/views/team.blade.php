@@ -1,7 +1,7 @@
 @extends('layouts.master')
 {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">--}}
 
-<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <style>
@@ -117,43 +117,43 @@
                         <div class="row pt-md">
 
                             {{--manish pandey sir--}}
-                            <div class="col-md-12  profile">
+                            {{--<div class="col-md-12  profile">--}}
 
-                                <div class="panel panel-info">
+                                {{--<div class="panel panel-info">--}}
 
-                                    <div class="panel-body">
-                                        <div class="img-box col-md-3 ">
-                                            <img src="/images/si.png" class="img-responsive img-rounded">
-                                            <ul class="text-center">
-                                                <a href="#">
-                                                    <li><i class="fa fa-facebook"></i></li>
-                                                </a>
-                                                <a href="#">
-                                                    <li><i class="fa fa-twitter"></i></li>
-                                                </a>
-                                                <a href="#">
-                                                    <li><i class="fa fa-linkedin"></i></li>
-                                                </a>
-                                                <a href="#">
-                                                    <li><i class="fa fa-github"></i></li>
-                                                </a>
+                                    {{--<div class="panel-body">--}}
+                                        {{--<div class="img-box col-md-3 ">--}}
+                                            {{--<img src="/images/si.png" class="img-responsive img-rounded">--}}
+                                            {{--<ul class="text-center">--}}
+                                                {{--<a href="#">--}}
+                                                    {{--<li><i class="fa fa-facebook"></i></li>--}}
+                                                {{--</a>--}}
+                                                {{--<a href="#">--}}
+                                                    {{--<li><i class="fa fa-twitter"></i></li>--}}
+                                                {{--</a>--}}
+                                                {{--<a href="#">--}}
+                                                    {{--<li><i class="fa fa-linkedin"></i></li>--}}
+                                                {{--</a>--}}
+                                                {{--<a href="#">--}}
+                                                    {{--<li><i class="fa fa-github"></i></li>--}}
+                                                {{--</a>--}}
 
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-8"><h1>Prof. Manish Pandey &nbsp;&nbsp;<span class="label label-info" style="font-size:0.6em">Project Coordinator</span> </h1>
-                                            <h2>Professor at Computer Science Department at <a href="http://manit.ac.in">MANIT</a></h2>
-                                            <ul class="list-inline" style="font-size: 1.5em;">
-                                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+                                            {{--</ul>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="col-md-8"><h1>Prof. Manish Pandey &nbsp;&nbsp;<span class="label label-info" style="font-size:0.6em">Project Coordinator</span> </h1>--}}
+                                            {{--<h2>Professor at Computer Science Department at <a href="http://manit.ac.in">MANIT</a></h2>--}}
+                                            {{--<ul class="list-inline" style="font-size: 1.5em;">--}}
+                                                {{--<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>--}}
+                                                {{--<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>--}}
+                                                {{--<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>--}}
+                                                {{--<li><a href="#"><i class="fa fa-github-square"></i></a></li>--}}
 
-                                            </ul>
-                                        </div>
-                                    </div>
+                                            {{--</ul>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
 
-                                </div>
-                            </div>
+                                {{--</div>--}}
+                            {{--</div>--}}
 
                             {{--ashish--}}
                             <div class="col-md-12  profile">
@@ -183,10 +183,10 @@
                                        <div class="col-md-8"><h1>Ashish Patel&nbsp;&nbsp;<span class="label label-primary" style="font-size:0.6em">Developer</span> </h1>
                                            <h2>Developer/Computer Science Student at <a href="http://manit.ac.in">MANIT</a></h2>
                                            <ul class="list-inline" style="font-size: 1.5em;">
-                                                   <li><a href="http://facebook.com/ashishpatel0720"><i class="fa fa-facebook-square"></i></a></li>
-                                                   <li><a href="http://twitter.com/ashishpatel0720"><i class="fa fa-twitter-square"></i></a></li>
-                                                   <li><a href="http://linkedin.com/ashishpatel0720"><i class="fa fa-linkedin-square"></i></a></li>
-                                                   <li><a href="http://github.com/ashishpatel0720"><i class="fa fa-github-square"></i></a></li>
+                                                   <li><a target='_blank' href="http://facebook.com/ashishpatel0720"><i class="fa fa-facebook-square"></i></a></li>
+                                                   <li><a target='_blank' href="http://twitter.com/ashishpatel0720"><i class="fa fa-twitter-square"></i></a></li>
+                                                   <li><a target='_blank' href="http://linkedin.com/ashishpatel0720"><i class="fa fa-linkedin-square"></i></a></li>
+                                                   <li><a target='_blank' href="http://github.com/ashishpatel0720"><i class="fa fa-github-square"></i></a></li>
                                            </ul>
                                            <p>for more visit , portfolio website&nbsp;&nbsp;<a href="http://ashishpatel.info"><i
                                                            class="glyphicon glyphicon-globe" style="font-size:1.3em;"></i></a></p>
@@ -322,12 +322,5 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1 text-center">
 
-                <h6>Coded with <i class="fa fa-heart red"></i> by <a href="http://www.nabeel.co.in" target="_blank">Nabeel Kondotty</a></h6>
-            </div>
-        </div>
-    </footer>
     @endsection
