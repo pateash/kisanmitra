@@ -38,7 +38,7 @@ You are welcome to contribute to this project,
 Thank you for considering contributing for the greater good for farmers! 
 
 **steps**
-- you must to have [composer](composer.io) installed
+- you must to have [composer](getcomposer.org) installed
 - fork or clone project
 - run `composer install`
 - copy `.env.example` and create `.env` file
