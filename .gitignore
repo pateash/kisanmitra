@@ -6,6 +6,5 @@
 /.idea
 Homestead.json
 Homestead.yaml
-.env
 /nb-metadata/nbproject/private/
 _ide_helper.php
