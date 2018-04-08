@@ -33,14 +33,17 @@ farming strategies according to environment and market.
 <img width='250' height='100' src="http://scikit-learn.org/stable/_static/scikit-learn-logo-small.png">
 </p>
 
-## Contributing
+## Running project/Contributing
 You are welcome to contribute to this project,
 Thank you for considering contributing for the greater good for farmers! 
 
 **steps**
+- you must to have [composer](composer.io) installed
 - fork or clone project
 - run `composer install`
-- edit `env.example` and create `env` file for your settings
+- copy `.env.example` and create `.env` file
+- run `php artisan key:generate`
+- run `php artisan serve` , this will serve project at `localhost:8000`
 - that's it happy coding..
 
 ## Vulnerabilities
