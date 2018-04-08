@@ -188,7 +188,7 @@
                                                    <li><a target='_blank' href="http://linkedin.com/ashishpatel0720"><i class="fa fa-linkedin-square"></i></a></li>
                                                    <li><a target='_blank' href="http://github.com/ashishpatel0720"><i class="fa fa-github-square"></i></a></li>
                                            </ul>
-                                           <p>for more visit , portfolio website&nbsp;&nbsp;<a href="http://ashishpatel.info"><i
+                                           <p>for more visit , portfolio website&nbsp;&nbsp;<a href="http://ashish.live"><i
                                                            class="glyphicon glyphicon-globe" style="font-size:1.3em;"></i></a></p>
 
                                        </div>
