@@ -4,7 +4,7 @@
 <div class="container">
         <h1 id="heading" style="font-size:2em;">How To Use</h1>
 
-    {{--step1--}}
+    <!-- {{--step1--}}
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
         <h2 id="heading" style="font-size: 1.3em;">#1 LogIn or Register to Kisan Mitra</h2>
@@ -20,13 +20,13 @@
             </blockquote>
           <br>
         </div>
-    </div>
+    </div> -->
 
     {{--step2--}}
     <div class="row">
 
         <div class="col-md-10 col-md-offset-1">
-            <h2 id="heading" style="font-size: 1.3em;">#2 Navigate to Predict Page</h2>
+            <h2 id="heading" style="font-size: 1.3em;">#1 Navigate to Predict Page</h2>
 
             <blockquote>
                   Now, We need to navigate to predict page for prediction form.
@@ -41,7 +41,7 @@
         <div class="row">
 
             <div class="col-md-10 col-md-offset-1">
-                <h2 id="heading" style="font-size: 1.3em;">#3 Predicting Yield</h2>
+                <h2 id="heading" style="font-size: 1.3em;">#2 Predicting Yield</h2>
 
                 <blockquote>
                     We have to fill Prediction form  and then Submit for getting Predictions.
@@ -58,7 +58,7 @@
         <div class="row">
 
             <div class="col-md-10 col-md-offset-1">
-                <h2 id="heading" style="font-size: 1.3em;">#4 That's All</h2>
+                <h2 id="heading" style="font-size: 1.3em;">#3 That's All</h2>
 
                 <blockquote>
                     Congratulations!, you have done it,

@@ -12,13 +12,6 @@
 */
 
 
-//test
-
-Route::get("/test",function(){
-    return view('auth.passwords.email');
-});
-
-
 
 
 
@@ -56,14 +49,20 @@ Route::post('/result','PredictionsController@result');
 
 
 // authorization routes
-Auth::routes();
+// Auth::routes();
 
-Route::get('/account'   , 'HomeController@index');
+// Route::get('/account'   , 'HomeController@index');
 
-//change password
-Route::patch('/password','HomeController@change_password');
+// //change password
+// Route::patch('/password','HomeController@change_password');
 
-//contact routes
-Route::get('/contact','ContactsController@create');
+// //contact routes
+// Route::get('/contact','ContactsController@create');
 
-Route::post("/contact",'ContactsController@store');
+// Route::post("/contact",'ContactsController@store');
+
+// Route::get("/reset",function(){
+//     return view('auth.passwords.email');
+// });
+
+
