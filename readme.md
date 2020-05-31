@@ -40,11 +40,14 @@ Thank you for considering contributing for the greater good for farmers!
 **steps**
 - you must to have [composer](composer.io) installed
 - fork or clone project
-- run `composer install`
-- copy `.env.example` and create `.env` file
+- run `npm install` - for installing JS dependencies
+- run `composer install` - for Installing Laravel dependencies
+- run `cp .env.example .env` - copy `.env.example` and create `.env` file
 - run `php artisan key:generate`
 - run `php artisan serve` , this will serve project at `localhost:8000`
 - that's it happy coding..
+
+Please start this project if you like.
 
 ## Vulnerabilities
 

@@ -118,7 +118,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="phone">
                         <p>Phone<span class="ph-numb">+91 7705047900</span></p>
                         <p><a target='_blank' href="//github.com/ashishpatel0720/kisanmitra" style="color:#956295"><i class="fa fa-github fa-2x"></i></a></p>
-                    
+
                     </div>
                     <div class="phone">
                       </div>
@@ -133,7 +133,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="header-right">
                     <div class="logo">
-                        <h1><a href="/">Kisan&nbsp;Mitra<small><small></small></small></a></h1>
+                        <h1><a href="/">Kisan&nbsp;Mitra<small><small>v1.1.0</small></small></a></h1>
                     </div>
 
                     {{-- @if(Auth::guest())
@@ -220,7 +220,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="col-md-4 ftr-grd">
                 <h3>Contact Us</h3>
                 <p>If you have any query or question, please <a href='//ashish.live/contact' target='_blank' >Contact</a></p>
-                     	 
+
 
             </div>
 
