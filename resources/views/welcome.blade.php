@@ -54,20 +54,20 @@
 	<div class="container">
 		<div class="latest-news-main">
 		   <div class="col-md-3 latest-grid">
-		   	  <img src="images/l1.jpg" alt="" class="img-responsive">
-		   	  <p>Temporibus autem quibusdam et aut offic</p>
+		   	  <!-- <img src="images/l1.jpg" alt="" class="img-responsive"> -->
+		   	  <!-- <p>Temporibus autem quibusdam et aut offic</p> -->
 		   </div>
 		   <div class="col-md-3 latest-grid">
-		   	  <img src="images/l2.jpg" alt="" class="img-responsive">
-		   	  <p>Temporibus autem quibusdam et aut offic</p>
+		   	  <!-- <img src="images/l2.jpg" alt="" class="img-responsive"> -->
+		   	  <!-- <p>Temporibus autem quibusdam et aut offic</p> -->
 		   </div>
 		   <div class="col-md-3 latest-grid">
-		   	  <img src="images/l.jpg" alt="" class="img-responsive">
-		   	  <p>Temporibus autem quibusdam et aut offic</p>
+		   	  <!-- <img src="images/l.jpg" alt="" class="img-responsive"> -->
+		   	  <!-- <p>Temporibus autem quibusdam et aut offic</p> -->
 		   </div>
 		   <div class="col-md-3 latest-grid">
-		   	  <img src="images/l4.jpg" alt="" class="img-responsive">
-		   	  <p>Temporibus autem quibusdam et aut offic</p>
+		   	  <!-- <img src="images/l4.jpg" alt="" class="img-responsive"> -->
+		   	  <!-- <p>Temporibus autem quibusdam et aut offic</p> -->
 		   </div>
 			<div class="clearfix"> </div>
 		</div>

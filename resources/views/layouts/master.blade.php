@@ -118,7 +118,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="phone">
                         <p>Phone<span class="ph-numb">+91 7705047900</span></p>
                         <p><a target='_blank' href="//github.com/ashishpatel0720/kisanmitra" style="color:#956295"><i class="fa fa-github fa-2x"></i></a></p>
-                    
+
                     </div>
                     <div class="phone">
                       </div>
@@ -133,10 +133,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="header-right">
                     <div class="logo">
-                        <h1><a href="/">Kisan&nbsp;Mitra<small><small></small></small></a></h1>
+                        <h1><a href="/">Kisan&nbsp;Mitra<small><small>v1.1.0</small></small></a></h1>
                     </div>
 
-                    @if(Auth::guest())
+                    {{-- @if(Auth::guest())
 
                     <div class="top-nav-right pull-right col-sx-12" style="font-size:1.3em;" id="user-in">
                         <a href="{{ route('login')}}" class="label label-default" style="background-color: #956295;" >Login</a>
@@ -168,7 +168,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </li>
                     </ol>
                 </div>
-                @endif
+                @endif --}}
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -187,7 +187,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <li><a href="/predict" class="active hvr-sweep-to-bottom">Predict</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/about">About Kisanmitra</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/how-to-use">How to Use</a></li>
-                <li><a class="hvr-sweep-to-bottom" href="/contact">Contact</a></li>
+                <!-- <li><a class="hvr-sweep-to-bottom" href="/contact">Contact</a></li> -->
                 <li><a class="hvr-sweep-to-bottom" href="/discuss">Feedback</a></li>
                 <li><a class="hvr-sweep-to-bottom" href="/team">Team</a></li>
             </ul>
@@ -219,17 +219,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="col-md-4 ftr-grd">
                 <h3>Contact Us</h3>
-                <p>If you have any query or question, please Contact us.</p>
-                <label class="hvr-wobble-bottom">
-                    <input type="submit" onclick="window.location.href='/contact'" 	 value="Contact">
-                </label>
+                <p>If you have any query or question, please <a href='//ashish.live/contact' target='_blank' >Contact</a></p>
+
 
             </div>
 
             <div class="clearfix"> </div>
 
             <div class="copy-right">
-                <p><i class="fa fa-code"></i> with <i class="fa fa-heart red" style="color:red"></i> by <a href="http://www.ashishpatel.info" target="_blank">Ashish Patel</a> and <a href='/team'>Team</a></p>
+                <p><i class="fa fa-code"></i> with <i class="fa fa-heart red" style="color:red"></i> by <a href="http://www.ashish.live" target="_blank">Ashish Patel</a> and <a href='/team'>Team</a></p>
                 <p>© 2017-forever Kisan Mitra. Nothing reserved ;)</p>
             </div>
         </div>
