@@ -49,6 +49,10 @@ Thank you for considering contributing for the greater good for farmers!
 
 Please start this project if you like.
 
+
+## Deployments
+Automatic deployment is enabled to HerokuApp from master.
+
 ## Vulnerabilities
 
 If you discover a vulnerability within kisanmitra, please send an e-mail to Ashish Patel at ashishpatel0720@gmail.com. All  vulnerabilities will be promptly addressed.
