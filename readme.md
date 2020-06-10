@@ -57,6 +57,11 @@ Automatic deployment is enabled to HerokuApp from master.
 
 If you discover a vulnerability within kisanmitra, please send an e-mail to Ashish Patel at ashishpatel0720@gmail.com. All  vulnerabilities will be promptly addressed.
 
+## Sponsors
+> Built using Jetbrains Products
+![Jetbrains](https://www.jetbrains.com/company/brand/img/jetbrains_logo.png)
+
+
 ## License
 
 kisanmitra is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
